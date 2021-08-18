@@ -50,35 +50,37 @@ namespace dotNetConsole
         }
         public void ShowCommands()
         {
-            System.Console.WriteLine("Console Commands:\n");
-            System.Console.WriteLine("cd <directoryNameMovingTo>");
-            System.Console.WriteLine("cd ..");
-            System.Console.WriteLine("rmdir");
+            System.Console.WriteLine("Console Commands:\n----------------------\n");
+            System.Console.WriteLine("cd <directoryNameMovingTo> \n- Move into the directory provided\n");
+            System.Console.WriteLine("cd .. \n- Move into the parent directory of the one you're currently in.\n");
+            System.Console.WriteLine("rmdir <directoryNameDeleting> \n- Delete the directory provided. Must be in the parent directory.\n");
         }
         public void ShowGit()
         {        
             Console.Clear();
-            System.Console.WriteLine("Github Commands:\n");
-            System.Console.WriteLine("git checkout <BranchToSwitchTo>");
-            System.Console.WriteLine("git clone <CloneUrl> ");
-            System.Console.WriteLine("git add .");
-            System.Console.WriteLine("git commit -m message");
-            System.Console.WriteLine("git push");
-            System.Console.WriteLine("git branch");
-            System.Console.WriteLine("git branch -a");
-            System.Console.WriteLine("git merge --abort");
-            System.Console.WriteLine("git remote set-url origin <url>");
+            System.Console.WriteLine("Github Commands:\n----------------------\n");
+            System.Console.WriteLine("git clone <CloneUrl> \n- Clone a local repo of the provided URL to your machine.\n");
+            System.Console.WriteLine("git checkout <BranchToSwitchTo> \n- Switch to the branch provided.\n");
+            System.Console.WriteLine("git add . \n- Stage all files in the current directory.\n");
+            System.Console.WriteLine("git add <DirName> \n- Stage all files in the specified directory.\n");
+            System.Console.WriteLine("git commit -m 'message' \n- Commit staged files so that they can be pushed.\n");
+            System.Console.WriteLine("git push \n- Push all commited changes to the remote repo\n");
+            System.Console.WriteLine("git branch \n- List all branches in your local repo\n");
+            System.Console.WriteLine("git branch -a \n- Lists all branches even in the remote repo");
+            System.Console.WriteLine("git merge --abort \n- Cancel a pending merge\n");
+            System.Console.WriteLine("git remote set-url origin <url> \n- Reset the origin or remote repo\n");
         }
 
         public void ShowDotNet()
         {
-            System.Console.WriteLine("DotNot Commands:");
-            System.Console.WriteLine("dotnet new");
-            System.Console.WriteLine("dotnet new console");
-            System.Console.WriteLine("dotnet build");
-            System.Console.WriteLine("dotnet run");
-            System.Console.WriteLine("dotnet sln");
-            System.Console.WriteLine("dotnet clean");
+            System.Console.WriteLine("DotNot Commands:\n----------------------\n");
+            System.Console.WriteLine("dotnet new console \n- Create a new console project inside the current directory.\n");
+            System.Console.WriteLine("dotnet build \n- Builds the project and dependencies to ensure you are up to date.\n");
+            System.Console.WriteLine("dotnet run \n- Run your source code directly from the command prompt.\n");
+            System.Console.WriteLine("dotnet sln \n- Sln allows you to add, remove, and list projects in your solution file.\n");
+            System.Console.WriteLine("dotnet test \n- Launch test runner for specified project. Returns 0 if successful. Returns 1 if failed.\n");
+            System.Console.WriteLine("dotnet clean \n- Cleans the output of the previous build.\n");
+            
         }
 
     }
