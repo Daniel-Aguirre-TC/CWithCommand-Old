@@ -74,7 +74,7 @@ namespace dotNetConsole
                 ShowGit();
                 break;
                 case "3":
-                System.Console.WriteLine("\nYou have selected DotNot.");                
+                System.Console.WriteLine("\nYou have selected DotNet.");                
                 ReadAndClear();
                 ShowDotNet();
                 break;
@@ -99,7 +99,7 @@ namespace dotNetConsole
             Console.Clear();
             System.Console.WriteLine("Github Commands:\n----------------------\n");
             System.Console.WriteLine("git clone <CloneUrl> \n- Clone a local repo of the provided URL to your machine.\n");
-            System.Console.WriteLine("git checkout <BranchToSwitchTo> \n- Switch to the branch provided.\n");
+            System.Console.WriteLine("git checkout <BranchToSwitchTo> \n- Switch to the branch provided. If you do not stage any changes made before switching branches, then your changes will switch with you. To prevent this you should stage changes before checkout to a new branch.\n");
             System.Console.WriteLine("git add . \n- Stage all files in the current directory.\n");
             System.Console.WriteLine("git add <DirName> \n- Stage all files in the specified directory.\n");
             System.Console.WriteLine("git commit -m 'message' \n- Commit staged files so that they can be pushed.\n");
@@ -111,7 +111,8 @@ namespace dotNetConsole
         }
         public void ShowDotNet()
         {
-            System.Console.WriteLine("DotNot Commands:\n----------------------\n");
+            System.Console.WriteLine("DotNet Commands:\n----------------------\n");
+            System.Console.WriteLine("dotnet new \n- add a new solution file to the current directory.\n");
             System.Console.WriteLine("dotnet new console \n- Create a new console project inside the current directory.\n");
             System.Console.WriteLine("dotnet build \n- Builds the project and dependencies to ensure you are up to date.\n");
             System.Console.WriteLine("dotnet run \n- Run your source code directly from the command prompt.\n");
