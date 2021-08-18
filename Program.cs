@@ -51,6 +51,7 @@ namespace dotNetConsole
         public void ShowCommands()
         {
             System.Console.WriteLine("Console Commands:\n----------------------\n");
+            System.Console.WriteLine("mkdir <newDirectoryName> \n- Make a new directory with the provided name.\n");
             System.Console.WriteLine("cd <directoryNameMovingTo> \n- Move into the directory provided\n");
             System.Console.WriteLine("cd .. \n- Move into the parent directory of the one you're currently in.\n");
             System.Console.WriteLine("rmdir <directoryNameDeleting> \n- Delete the directory provided. Must be in the parent directory.\n");
