@@ -9,7 +9,7 @@ namespace dotNetConsole
         {
             Program program = new Program();
             Console.Clear();
-            System.Console.WriteLine( "Intro to C# with Command Line");
+            System.Console.WriteLine( "Intro to C# with Command Line\n\nPlease Press Enter to continue.\n\nCreated by: Daniel Aguirre");
             program.ReadAndClear();
             program.GetInput();
             program.ReadAndClear();
