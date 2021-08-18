@@ -5,44 +5,81 @@ namespace dotNetConsole
 {
     class Program
     {
+            bool programActive = true;
         static void Main(string[] args)
         {
             Program program = new Program();
             Console.Clear();
-            System.Console.WriteLine( "Intro to C# with Command Line\n\nPlease Press Enter to continue.\n\nCreated by: Daniel Aguirre");
-            program.ReadAndClear();
-            program.GetInput();
-            program.ReadAndClear();
+            System.Console.WriteLine( "Intro to C# with Command Line\n\nPlease Press any key to continue.\n\nCreated by: Daniel Aguirre");
+            Console.ReadKey();
+            do{
+            Console.Clear();
+            // Ask user which commands to display, then show commands upon completion.
+                program.GetInput();
+            // wait for Console.ReadKey() then will Console.Clear()
+                program.ReadAndClear();
+            // Offer new command list, if user inputs no then will end program.
+                program.OfferNewCommandList();
+            }            
+            while (program.programActive);
+            
+
+        }
+
+        public void OfferNewCommandList()
+        {
+            System.Console.WriteLine("Would you like to view a new list of commands?\n\nPlease enter y/n");
+            string input = Console.ReadLine();           
+            Console.Clear();
+            switch(input)
+            {
+                //if yes get input
+                case "y":
+                // just breaking so that we will go straight back to our while loop.
+                break;
+                // if no thank for using and break without calling new method. This should be the end of the program.
+                case "n":
+                System.Console.WriteLine("Thank you for using this Console Application!\n\nAny/All Feedback Welcome!\n\nCreated by: Daniel Aguirre\n\nPress any key to end.");
+                System.Console.ReadKey();
+                programActive = false;
+                break;
+                // if answer does not match, try again.
+                default:
+                System.Console.WriteLine("Invalid Selection. Please Try Again.");
+                ReadAndClear();
+                OfferNewCommandList();
+                break;
+            }
         }
 
         public void ReadAndClear()
         {
-            Console.ReadLine();
+            Console.ReadKey();
             Console.Clear();
         }
 
         public void GetInput()
         {
-            System.Console.WriteLine("Please select one of the following:\n1) Command\n2) Github\n3) DotNot\n");
+            System.Console.WriteLine("Please select one of the following:\n\n1) Command\n2) Github\n3) DotNet\n");
             string input = Console.ReadLine();
             switch(input){
                 case "1":
-                System.Console.WriteLine("You have selected Command.");
+                System.Console.WriteLine("\nYou have selected Command.");
                 ReadAndClear();
                 ShowCommands();
                 break;
                 case "2":
-                System.Console.WriteLine("You have selected Github.");
+                System.Console.WriteLine("\nYou have selected Github.");
                 ReadAndClear();
                 ShowGit();
                 break;
                 case "3":
-                System.Console.WriteLine("You have selected DotNot.");                
+                System.Console.WriteLine("\nYou have selected DotNot.");                
                 ReadAndClear();
                 ShowDotNet();
                 break;
                 default:
-                System.Console.WriteLine("Invalid Selection.\nPlease Select a valid option.");
+                System.Console.WriteLine("\nInvalid Selection.\nPlease Select a valid option.");
                 ReadAndClear();
                 GetInput();
                 break;
@@ -71,7 +108,6 @@ namespace dotNetConsole
             System.Console.WriteLine("git merge --abort \n- Cancel a pending merge\n");
             System.Console.WriteLine("git remote set-url origin <url> \n- Reset the origin or remote repo\n");
         }
-
         public void ShowDotNet()
         {
             System.Console.WriteLine("DotNot Commands:\n----------------------\n");
@@ -80,8 +116,7 @@ namespace dotNetConsole
             System.Console.WriteLine("dotnet run \n- Run your source code directly from the command prompt.\n");
             System.Console.WriteLine("dotnet sln \n- Sln allows you to add, remove, and list projects in your solution file.\n");
             System.Console.WriteLine("dotnet test \n- Launch test runner for specified project. Returns 0 if successful. Returns 1 if failed.\n");
-            System.Console.WriteLine("dotnet clean \n- Cleans the output of the previous build.\n");
-            
+            System.Console.WriteLine("dotnet clean \n- Cleans the output of the previous build.\n");            
         }
 
     }
