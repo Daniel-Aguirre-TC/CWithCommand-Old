@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\dotNetConsole.csproj": {}
+    "C:\\repos\\CWithCommand\\dotNetConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\dotNetConsole.csproj": {
+    "C:\\repos\\CWithCommand\\dotNetConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\dotNetConsole.csproj",
+        "projectUniqueName": "C:\\repos\\CWithCommand\\dotNetConsole.csproj",
         "projectName": "dotNetConsole",
-        "projectPath": "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\dotNetConsole.csproj",
-        "packagesPath": "C:\\Users\\Second-Desktop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\obj\\",
+        "projectPath": "C:\\repos\\CWithCommand\\dotNetConsole.csproj",
+        "packagesPath": "C:\\Users\\Cruz Sanchez\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\CWithCommand\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Second-Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cruz Sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

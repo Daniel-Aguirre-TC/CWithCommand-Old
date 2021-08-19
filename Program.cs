@@ -9,14 +9,14 @@ namespace dotNetConsole
         static void Main(string[] args)
         {
             Program program = new Program();
-            Console.Clear();
+            //Console.Clear();
             System.Console.WriteLine( "Intro to C# with Command Line\n\nPlease Press any key to continue.\n\nCreated by: Daniel Aguirre");
-            Console.ReadKey();
+            Console.ReadLine();
             do{
-            Console.Clear();
+            //Console.Clear();
             // Ask user which commands to display, then show commands upon completion.
                 program.GetInput();
-            // wait for Console.ReadKey() then will Console.Clear()
+            // wait for Console.ReadLine() then will Console.Clear()
                 program.ReadAndClear();
             // Offer new command list, if user inputs no then will end program.
                 program.OfferNewCommandList();
@@ -30,7 +30,7 @@ namespace dotNetConsole
         {
             System.Console.WriteLine("Would you like to view a new list of commands?\n\nPlease enter y/n");
             string input = Console.ReadLine();           
-            Console.Clear();
+            //Console.Clear();
             switch(input)
             {
                 //if yes get input
@@ -40,7 +40,7 @@ namespace dotNetConsole
                 // if no thank for using and break without calling new method. This should be the end of the program.
                 case "n":
                 System.Console.WriteLine("Thank you for using this Console Application!\n\nAny/All Feedback Welcome!\n\nCreated by: Daniel Aguirre\n\nPress any key to end.");
-                System.Console.ReadKey();
+                System.Console.ReadLine();
                 programActive = false;
                 break;
                 // if answer does not match, try again.
@@ -54,8 +54,8 @@ namespace dotNetConsole
 
         public void ReadAndClear()
         {
-            Console.ReadKey();
-            Console.Clear();
+            Console.ReadLine();
+            //Console.Clear();
         }
 
         public void GetInput()
@@ -99,7 +99,7 @@ namespace dotNetConsole
         }
         public void ShowGit()
         {        
-            Console.Clear();
+            //Console.Clear();
             System.Console.WriteLine("Github Commands:\n----------------------\n");
             System.Console.WriteLine("git clone <CloneUrl> \n- Clone a local repo of the provided URL to your machine.\n");
             System.Console.WriteLine("git checkout <BranchToSwitchTo> \n- Switch to the branch provided. If you do not stage any changes made before switching branches, then your changes will switch with you. To prevent this you should stage changes before checkout to a new branch.\n");

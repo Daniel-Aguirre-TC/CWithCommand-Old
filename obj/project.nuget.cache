@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TgPkjlrfm47sT7fye6KaFk/syMwv2wjAPSQlcd2H6gsxDv3G1fgx9BP2ALgZGaGvjsyu0ENgkrCPOSAMntj9+Q==",
+  "dgSpecHash": "CH6L2V7No/hY/8H/IdBpLWm6UUL+Zt8aa3NdCO1ENrlUCuG+5GMk5ocS2l8YqF2ZhXjOuiMDpKy4/SCbVfBtJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Second-Desktop\\repos\\dotNetConsole\\dotNetConsole.csproj",
+  "projectFilePath": "C:\\repos\\CWithCommand\\dotNetConsole.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
