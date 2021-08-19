@@ -1,0 +1,13 @@
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.exe
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.deps.json
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.runtimeconfig.json
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.runtimeconfig.dev.json
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.dll
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\bin\Debug\netcoreapp3.1\ConsoleTips.pdb
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.csproj.AssemblyReference.cache
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.AssemblyInfoInputs.cache
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.AssemblyInfo.cs
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.csproj.CoreCompileInputs.cache
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.dll
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.pdb
+C:\Users\Second-Desktop\repos\ConsoleTips\ConsoleTips\obj\Debug\netcoreapp3.1\ConsoleTips.genruntimeconfig.cache
